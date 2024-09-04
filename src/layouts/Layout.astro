@@ -1,5 +1,5 @@
 ---
-import Header from '../components/Header.astro';
+import Header from '../components/Header.tsx'
 
 interface Props {
 	title: string;
@@ -19,8 +19,8 @@ const { title, description } = Astro.props;
 		
 		<title>{title}</title>
 	</head>
-	<body>
-    <Header />
+	<body >
+    <Header client:load/>
 		<slot />
 	</body>
 </html>
@@ -28,7 +28,7 @@ const { title, description } = Astro.props;
 
 	html {
 		font-family: system-ui, sans-serif;
-		background: #F2F2F2;
+		background: #f1f5f9;
     scroll-behavior: smooth;
 	}
 	
