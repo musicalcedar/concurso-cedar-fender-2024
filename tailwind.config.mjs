@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        hero: "url(/fender.webp)",
+        hero: "url(/gradiente.png)",
       },
     },
   },

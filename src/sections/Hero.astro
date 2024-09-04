@@ -1,4 +1,7 @@
 ---
+import CountDown from '../components/CountDown.astro';
+
+
 interface Props {
   id: string;
 }
@@ -6,12 +9,18 @@ interface Props {
 const {id} = Astro.props;
 ---
 
-<section id={id} class="h-screen bg-neutral-100 flex flex-col justify-center items-center bg-hero bg-cover bg-top ">
-  
-<h2 class="text-slate-100 text-center text-4xl font-bold">Bienvenido al Concurso de Cazatalentos Cedar-Fender</h2>
-  <p class="hero__description">¡Participa y muestra tu talento musical!</p>
-  <a href="#registration" >   
+<section id={id} class="h-screen bg-neutral-100 flex flex-col justify-center items-center bg-hero bg-cover bg-top bg-fixed ">
+  <div class=" h-[80%] lg:h-[60%] max-w-screen-lg relative flex flex-col items-center justify-evenly  lg:gap-4">
+    
+    <img src="/logoCompleto.svg" alt="logo" class="hidden lg:block w-dvw lg:w-2/3 mx-auto h-auto px-8 " />
+    <img src="/_vertical.svg" alt="logo" class="w-dvw lg:hidden mx-auto h-auto px-8" />
+    
+    
+    <p class="text-slate-200 text-center text-2xl font-bold px-4 text-balance "><span class="text-red-500 text-4xl block">¡Demuestra tu talento!</span> y gana una Guitarra o un Bajo Fender Player</p>
+ 
+    <a href="#registration" class="bg-slate-200 p-4 roundenfull rounded-lg text-black text-xl font-bold ">   
+      Registrate
+    </a>
+    <CountDown />
+  </div>
 </section>
-<style>
-
-</style>

@@ -51,11 +51,11 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full max-w-screen-lg lg:fixed  flex flex-row justify-between items-center h-14 lg:left-1/2 lg:-translate-x-1/2">
-      <p className="p-2 text-slate-200 lg:hidden">Cazatalentos Cedar Fender</p>
+    <header className="w-full max-w-screen-lg absolute lg:fixed bg-transparent flex flex-row justify-between items-center h-16 lg:left-1/2 lg:-translate-x-1/2 ">
+      <p className="p-2 text-slate-200 hidden">Cazatalentos Cedar Fender</p>
       <button
         onClick={toggleMenu}
-        className=" w-auto p-2 rounded-lg border-white border lg:hidden"
+        className=" w-auto p-2 rounded-lg border-white border hidden"
       >
         <XMarkIcon
           className={`${isOpen ? "" : "hidden"} w-8 h-8 text-slate-200`}
