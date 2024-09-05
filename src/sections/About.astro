@@ -6,7 +6,15 @@ interface Props {
 const {id} = Astro.props;
 ---
 
-<section id={id} class="h-screen">
+<section id={id} class="max-w-screen-lg mx-auto  flex flex-col justify-center items-center h-screen" data-observe>
   <h2>Acerca del concurso</h2>
+  <p class="text-slate-200 text-md ">
+    <span class="text-red-500 text-4xl block">¡Demuestra tu talento!</span> y gana una Guitarra o un Bajo Fender Player
+  </p>
+  <p class="text-slate-200 text-md ">
+    <span class="text-red-500 text-4xl block">¡Demuestra tu talento!</span> y gana una Guitarra o un Bajo Fender Player
+  </p>
+  <p class="text-slate-200 text-md ">
+    ¡Participa y muestra tu talento musical!
+  </p>
 </section>
-
